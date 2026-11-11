@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name "viewport" content="width=device-width, initial-scale=1">
+
+<title>title</title>
+<style>
+h1{
+font-size: 200px;
+text-align: center;
+position: relative;
+animation-name: bomb;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+   }
+
+@keyframes bomb {
+0%   {color:red}
+50%   {color:yellow;}
+100%   {color:red;}   }
+
+      h2{
+            	text-align: center;
+            	font-size: 50px;
+            	font-style: italic;}
+            #myDiv {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+
+    transform: rotateX(150deg);
+    animation:myDiv 5s infinite;
+    -moz-animation:myDiv 5s infinite;
+    -webkit-animation:myDiv 5s infinite;
+    -o-animation:myDiv 5s infinite;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+@keyframes myDiv
+{
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50% {transform: rotate(0deg);left:500px;}
+    55% {transform: rotate(0deg);left:500px;}
+    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes myDiv
+{
+    0% {-webkit-transform: rotate(0deg);left:0px;}
+    25% {-webkit-transform: rotate(20deg);left:0px;}
+    50% {-webkit-transform: rotate(0deg);left:500px;}
+    55% {-webkit-transform: rotate(0deg);left:500px;}
+    70% {-webkit-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes myDiv
+{
+    0%  {-moz-transform: rotate(0deg);left:0px;}
+    25% {-moz-transform: rotate(20deg);left:0px;}
+    50%  {-moz-transform: rotate(0deg);left:500px;}
+    55%  {-moz-transform: rotate(0deg);left:500px;}
+    70%  {-moz-transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes myDiv
+{
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50%  {transform: rotate(0deg);left:500px;}
+    55%  {transform: rotate(0deg);left:500px;}
+    70%  {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0px;}
+}
+    div{
+    	position: relative;}
+
+
+</style>
+</head>
+<body>
+<style type="text/css">
+body{
+           background-image: linear-gradient(to bottom right, yellow, red);
+background-repeat: no-repeat;
+	  background-attachment: fixed; }
+</style>
+
+
+<h1>Snake's</h1>
+<div id="myDiv"> <h2>sapper game</h2></div>
+
+<a href="map.htm">
+<img src="D:\pic\button.png" class="center">        
+
+</a>
+</body>
+</html>
+
+
+

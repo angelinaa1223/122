@@ -1,0 +1,3 @@
+list=['К', 'и','р','л']
+print(list)
+print(list[0],list[1],list[2],list[1],list[3 ],list[3])

@@ -1,0 +1,65 @@
+
+<head>
+<style type="text/css">
+body{
+}
+#myDiv {
+    font-size:  100px;  
+    width: 500px;
+    height: 300px;
+
+    transform: rotateX(150deg);
+    animation:myDiv 5s infinite;
+    -moz-animation:myDiv 5s infinite;
+    -webkit-animation:myDiv 5s infinite;
+    -o-animation:myDiv 5s infinite;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+}
+@keyframes myDiv
+{
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50% {transform: rotate(0deg);left:500px;}
+    55% {transform: rotate(0deg);left:500px;}
+    70% {transform: rotate(0deg);left:500px;}
+    100% {transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes myDiv
+{
+    0% {-webkit-transform: rotate(0deg);left:0px;}
+    25% {-webkit-transform: rotate(20deg);left:0px;}
+    50% {-webkit-transform: rotate(0deg);left:500px;}
+    55% {-webkit-transform: rotate(0deg);left:500px;}
+    70% {-webkit-transform: rotate(0deg);left:500px;}
+    100% {-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+@-moz-keyframes myDiv
+{
+    0%  {-moz-transform: rotate(0deg);left:0px;}    
+    25% {-moz-transform: rotate(20deg);left:0px;}
+    50%  {-moz-transform: rotate(0deg);left:500px;}
+    55%  {-moz-transform: rotate(0deg);left:500px;}
+    70%  {-moz-transform: rotate(0deg);left:500px;}
+    100% {-moz-transform: rotate(-360deg);left:0px;}
+}
+
+@-o-keyframes myDiv
+{
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50%  {transform: rotate(0deg);left:500px;}
+    55%  {transform: rotate(0deg);left:500px;}
+    70%  {transform: rotate(0deg);left:500px;}
+    100% {transform: rotate(-360deg);left:0px;}
+}
+div{
+position: relative;}
+}
+</style>
+</head>
+<body>
+<div id="myDiv"><img src="https://static.wixstatic.com/media/502df6_57cf18593a0d4e8f922013b3cb1e0f71~mv2.png"></div>
+</body>

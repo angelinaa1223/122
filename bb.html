@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div></div>
+    <canvas id="canvas" width="200" height="400"> 
+    </canvas>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/3CWJNqyub3o%22%3E"></iframe>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var circle = function (x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+            ctx.stroke();
+        }
+            ctx.lineWidth = 4;
+
+            ctx.strokeStyle = "Red";
+
+            circle (85, 100, 10);
+
+            ctx.strokeStyle = "Red";
+
+            circle (115, 100, 10);
+
+            ctx.beginPath();
+            ctx.arc(100, 120, 10, 0, Math.PI, false);
+            ctx.stroke();
+
+            ctx.strokeStyle = "Green";
+
+            circle (100, 100, 40);
+
+            ctx.strokeStyle = "Blue";
+
+            circle (100, 190, 50);
+
+            ctx.strokeStyle = "Purple";
+
+            circle (100, 300, 60);
+
+            ctx.font = "25px cursive";
+            ctx.fillStyle = 'blue';
+            ctx.fillText("You win!", 55, 25);
+    </script>
+</body>
+</html>

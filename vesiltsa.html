@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <script src="vesilitsa.js"></script>
+</head>
+<body>
+    <div></div>
+    <canvas id="canvas" width="200" height="400"> 
+
+    </canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillRect(0, 0, 10, 400);
+        ctx.fillRect(0, 0, 200, 10);
+        ctx.fillRect(100, 0, 10, 100);  
+        ctx.fillRect(0, 0, 200, 10); 
+        ctx.fillStyle = "Red";
+        ctx.fillRect(90, 100, 30, 30);
+        ctx.fillRect(80, 130, 50, 50);
+        ctx.fillRect(60, 130, 30, 10);
+        ctx.fillRect(120, 130, 30, 10);
+        ctx.fillRect(60, 170, 30, 10);
+        ctx.fillRect(120, 170, 30, 10);
+        var circle = function (x, y, radius) {
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+        ctx.stroke();
+    };
+
+        ctx.strokeStyle = "Blue";
+        circle(100, 110, 5);
+        circle(110, 110, 5);
+        ctx.beginPath();
+        ctx.arc(105, 120, 10, 0, Math.PI, false);
+        ctx.stroke();
+
+        context.fillText("You win!", 20, 50);
+    </script>
+</body>
+</html> 
